@@ -36,7 +36,6 @@ module.exports = class Strategy extends require('./options')
     query.redirect_uri = options.redirect
     done null, url
 
-"grant_type":"client_credentials"
 fetchAccessToken: (code, dialog, done) ->
   url = @url 'token'
   query = url.query or= {}
